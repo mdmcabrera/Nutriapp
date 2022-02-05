@@ -1,0 +1,645 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3E0147E023576AA5008E0E3B /* SearchProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E0147DF23576AA5008E0E3B /* SearchProductViewController.swift */; };
+		3E04F75A2341F8BD007BFAC8 /* UserHealthProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E04F7592341F8BD007BFAC8 /* UserHealthProfile.swift */; };
+		3E04F760234202F3007BFAC8 /* UserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E04F75F234202F3007BFAC8 /* UserProfileViewController.swift */; };
+		3E04F76223420415007BFAC8 /* ProfileDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E04F76123420415007BFAC8 /* ProfileDataStore.swift */; };
+		3E04F76523422BA6007BFAC8 /* HKBiologicalSex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E04F76423422BA6007BFAC8 /* HKBiologicalSex.swift */; };
+		3E04F769234253D4007BFAC8 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E04F768234253D4007BFAC8 /* SettingsTableViewController.swift */; };
+		3E06D5F62347686100E89A19 /* Macros.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E06D5F52347686100E89A19 /* Macros.swift */; };
+		3E11C3AE234366A500B9BD0D /* MacrosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E11C3AD234366A500B9BD0D /* MacrosViewController.swift */; };
+		3E1359F823586450007A5AA7 /* Double+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1359F723586450007A5AA7 /* Double+Extension.swift */; };
+		3E1359FA235864CF007A5AA7 /* Int+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1359F9235864CF007A5AA7 /* Int+Extension.swift */; };
+		3E1607E8234DF0B400B68D9F /* MealTrackerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1607E7234DF0B400B68D9F /* MealTrackerViewController.swift */; };
+		3E3524EA23587C0A00CE24F4 /* InsertMeal.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E3524E923587C0900CE24F4 /* InsertMeal.storyboard */; };
+		3E3FAE77237987A800F10F2D /* UITextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3FAE76237987A800F10F2D /* UITextField+Extension.swift */; };
+		3E3FAE792379A9BF00F10F2D /* SegueIdentifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3FAE782379A9BF00F10F2D /* SegueIdentifiers.swift */; };
+		3E46C5BF233B9F0800987DFB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E46C5BE233B9F0800987DFB /* AppDelegate.swift */; };
+		3E46C5C1233B9F0800987DFB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E46C5C0233B9F0800987DFB /* SceneDelegate.swift */; };
+		3E46C5C3233B9F0800987DFB /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E46C5C2233B9F0800987DFB /* LoginViewController.swift */; };
+		3E46C5C6233B9F0800987DFB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E46C5C4233B9F0800987DFB /* Main.storyboard */; };
+		3E46C5C8233B9F0A00987DFB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E46C5C7233B9F0A00987DFB /* Assets.xcassets */; };
+		3E46C5CB233B9F0A00987DFB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E46C5C9233B9F0A00987DFB /* LaunchScreen.storyboard */; };
+		3E4B1C352359F82000AFA51F /* TescoProductResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4B1C342359F82000AFA51F /* TescoProductResponse.swift */; };
+		3E566A63238EBC370002CEB6 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E566A62238EBC370002CEB6 /* Food.swift */; };
+		3E590A7523DB0F4000E6006C /* FavoriteFood.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E590A7423DB0F4000E6006C /* FavoriteFood.swift */; };
+		3E5C308923CDFD9200BA3FFF /* SearchProductResultsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5C308823CDFD9200BA3FFF /* SearchProductResultsTableViewController.swift */; };
+		3E5C308B23CE15AD00BA3FFF /* LoadSearchProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5C308A23CE15AD00BA3FFF /* LoadSearchProductViewController.swift */; };
+		3E5C308D23CE246000BA3FFF /* ProductEdamamResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5C308C23CE246000BA3FFF /* ProductEdamamResponse.swift */; };
+		3E6455212354C407001FDDA0 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6455202354C407001FDDA0 /* Date+Extension.swift */; };
+		3E65033323D601AF0032A6AB /* EdamamProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E65033223D601AF0032A6AB /* EdamamProductViewController.swift */; };
+		3E6B783E23C77AA400E39F7D /* MealHeaderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6B783D23C77AA400E39F7D /* MealHeaderButton.swift */; };
+		3E6EC8F72395286A008EED96 /* MyFoodsTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6EC8F62395286A008EED96 /* MyFoodsTableCell.swift */; };
+		3E6EC8F9239548ED008EED96 /* SelfSizedTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6EC8F8239548ED008EED96 /* SelfSizedTableView.swift */; };
+		3E706D2923D1B6690037D165 /* EdamamFood.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E706D2823D1B6690037D165 /* EdamamFood.swift */; };
+		3E706D2D23D1D0000037D165 /* EdamamProductTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E706D2C23D1D0000037D165 /* EdamamProductTableCell.swift */; };
+		3E883302238BED8200A315D4 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E883301238BED8200A315D4 /* User.swift */; };
+		3E9A84392344B07D00B80842 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E9A84382344B07D00B80842 /* SessionManager.swift */; };
+		3EA9B2E6233E4F400027B4DB /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EA9B2E5233E4F400027B4DB /* HealthKit.framework */; };
+		3EA9B2E8233E53DD0027B4DB /* bento.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EA9B2E7233E53DD0027B4DB /* bento.png */; };
+		3EA9B2EA233E59BD0027B4DB /* HealthKitSetupAssistant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA9B2E9233E59BD0027B4DB /* HealthKitSetupAssistant.swift */; };
+		3EC1877E233CCAD1003D33EE /* EVALIA.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3EC1877C233CCAD1003D33EE /* EVALIA.ttf */; };
+		3EC1877F233CCAD1003D33EE /* EVALIA.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3EC1877D233CCAD1003D33EE /* EVALIA.otf */; };
+		3EC18781233CCC12003D33EE /* dealerplate.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3EC18780233CCC12003D33EE /* dealerplate.ttf */; };
+		3EEBFD112358BA82009FB0BD /* TescoProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEBFD102358BA82009FB0BD /* TescoProductViewController.swift */; };
+		3EF98DB42355E1A30027BED2 /* InsertMealViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF98DB32355E1A30027BED2 /* InsertMealViewController.swift */; };
+		3EF98DB6235603280027BED2 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF98DB5235603280027BED2 /* UIView+Extension.swift */; };
+		3EF98DB82356117B0027BED2 /* BarcodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF98DB72356117A0027BED2 /* BarcodeViewController.swift */; };
+		3EFA7FFB23D99CDE00DCD1CB /* TimelineButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EFA7FFA23D99CDE00DCD1CB /* TimelineButton.swift */; };
+		3EFA800523D9D94700DCD1CB /* CellIdentifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EFA800423D9D94700DCD1CB /* CellIdentifiers.swift */; };
+		47422A46C931ECB537537A56 /* Pods_NutriApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E4B2223FE800844B7B578C7 /* Pods_NutriApp.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0E4B2223FE800844B7B578C7 /* Pods_NutriApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NutriApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0E6B6F8BE3C29B27A29312EE /* Pods-NutriApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NutriApp.release.xcconfig"; path = "Target Support Files/Pods-NutriApp/Pods-NutriApp.release.xcconfig"; sourceTree = "<group>"; };
+		3E0147DF23576AA5008E0E3B /* SearchProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchProductViewController.swift; sourceTree = "<group>"; };
+		3E04F7592341F8BD007BFAC8 /* UserHealthProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserHealthProfile.swift; sourceTree = "<group>"; };
+		3E04F75F234202F3007BFAC8 /* UserProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileViewController.swift; sourceTree = "<group>"; };
+		3E04F76123420415007BFAC8 /* ProfileDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDataStore.swift; sourceTree = "<group>"; };
+		3E04F76423422BA6007BFAC8 /* HKBiologicalSex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HKBiologicalSex.swift; sourceTree = "<group>"; };
+		3E04F768234253D4007BFAC8 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
+		3E06D5F52347686100E89A19 /* Macros.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Macros.swift; sourceTree = "<group>"; };
+		3E11C3AD234366A500B9BD0D /* MacrosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacrosViewController.swift; sourceTree = "<group>"; };
+		3E1359F723586450007A5AA7 /* Double+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extension.swift"; sourceTree = "<group>"; };
+		3E1359F9235864CF007A5AA7 /* Int+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Extension.swift"; sourceTree = "<group>"; };
+		3E1607E7234DF0B400B68D9F /* MealTrackerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealTrackerViewController.swift; sourceTree = "<group>"; };
+		3E3524E923587C0900CE24F4 /* InsertMeal.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = InsertMeal.storyboard; sourceTree = "<group>"; };
+		3E3FAE76237987A800F10F2D /* UITextField+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extension.swift"; sourceTree = "<group>"; };
+		3E3FAE782379A9BF00F10F2D /* SegueIdentifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegueIdentifiers.swift; sourceTree = "<group>"; };
+		3E46C5BB233B9F0800987DFB /* NutriApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NutriApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E46C5BE233B9F0800987DFB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3E46C5C0233B9F0800987DFB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		3E46C5C2233B9F0800987DFB /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		3E46C5C5233B9F0800987DFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3E46C5C7233B9F0A00987DFB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3E46C5CA233B9F0A00987DFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3E46C5CC233B9F0A00987DFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3E46C5D2233BA4E200987DFB /* NutriApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NutriApp.entitlements; sourceTree = "<group>"; };
+		3E4B1C342359F82000AFA51F /* TescoProductResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TescoProductResponse.swift; sourceTree = "<group>"; };
+		3E566A62238EBC370002CEB6 /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
+		3E590A7423DB0F4000E6006C /* FavoriteFood.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteFood.swift; sourceTree = "<group>"; };
+		3E5C308823CDFD9200BA3FFF /* SearchProductResultsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchProductResultsTableViewController.swift; sourceTree = "<group>"; };
+		3E5C308A23CE15AD00BA3FFF /* LoadSearchProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadSearchProductViewController.swift; sourceTree = "<group>"; };
+		3E5C308C23CE246000BA3FFF /* ProductEdamamResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductEdamamResponse.swift; sourceTree = "<group>"; };
+		3E6455202354C407001FDDA0 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		3E65033223D601AF0032A6AB /* EdamamProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EdamamProductViewController.swift; sourceTree = "<group>"; };
+		3E6B783D23C77AA400E39F7D /* MealHeaderButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealHeaderButton.swift; sourceTree = "<group>"; };
+		3E6EC8F62395286A008EED96 /* MyFoodsTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFoodsTableCell.swift; sourceTree = "<group>"; };
+		3E6EC8F8239548ED008EED96 /* SelfSizedTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfSizedTableView.swift; sourceTree = "<group>"; };
+		3E706D2823D1B6690037D165 /* EdamamFood.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EdamamFood.swift; sourceTree = "<group>"; };
+		3E706D2C23D1D0000037D165 /* EdamamProductTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EdamamProductTableCell.swift; sourceTree = "<group>"; };
+		3E883301238BED8200A315D4 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		3E9A84382344B07D00B80842 /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
+		3EA9B2E5233E4F400027B4DB /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		3EA9B2E7233E53DD0027B4DB /* bento.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bento.png; sourceTree = "<group>"; };
+		3EA9B2E9233E59BD0027B4DB /* HealthKitSetupAssistant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitSetupAssistant.swift; sourceTree = "<group>"; };
+		3EC1877C233CCAD1003D33EE /* EVALIA.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = EVALIA.ttf; sourceTree = "<group>"; };
+		3EC1877D233CCAD1003D33EE /* EVALIA.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = EVALIA.otf; sourceTree = "<group>"; };
+		3EC18780233CCC12003D33EE /* dealerplate.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = dealerplate.ttf; sourceTree = "<group>"; };
+		3EEBFD102358BA82009FB0BD /* TescoProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TescoProductViewController.swift; sourceTree = "<group>"; };
+		3EF98DB32355E1A30027BED2 /* InsertMealViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsertMealViewController.swift; sourceTree = "<group>"; };
+		3EF98DB5235603280027BED2 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		3EF98DB72356117A0027BED2 /* BarcodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeViewController.swift; sourceTree = "<group>"; };
+		3EFA7FFA23D99CDE00DCD1CB /* TimelineButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineButton.swift; sourceTree = "<group>"; };
+		3EFA800423D9D94700DCD1CB /* CellIdentifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellIdentifiers.swift; sourceTree = "<group>"; };
+		EE54DA02033CA5063CC43A1C /* Pods-NutriApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NutriApp.debug.xcconfig"; path = "Target Support Files/Pods-NutriApp/Pods-NutriApp.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3E46C5B8233B9F0800987DFB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47422A46C931ECB537537A56 /* Pods_NutriApp.framework in Frameworks */,
+				3EA9B2E6233E4F400027B4DB /* HealthKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		27C4B65E2F444DECBDDAA105 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3EA9B2E5233E4F400027B4DB /* HealthKit.framework */,
+				0E4B2223FE800844B7B578C7 /* Pods_NutriApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3E03A38223460CC4001FC02D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3E46C5C7233B9F0A00987DFB /* Assets.xcassets */,
+				3EA9B2E7233E53DD0027B4DB /* bento.png */,
+				3EC1877B233CCABA003D33EE /* fonts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		3E04F75B2341FC33007BFAC8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3E883301238BED8200A315D4 /* User.swift */,
+				3E566A62238EBC370002CEB6 /* Food.swift */,
+				3E06D5F52347686100E89A19 /* Macros.swift */,
+				3E04F7592341F8BD007BFAC8 /* UserHealthProfile.swift */,
+				3E4B1C342359F82000AFA51F /* TescoProductResponse.swift */,
+				3E5C308C23CE246000BA3FFF /* ProductEdamamResponse.swift */,
+				3E706D2823D1B6690037D165 /* EdamamFood.swift */,
+				3E590A7423DB0F4000E6006C /* FavoriteFood.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3E04F75E2342029F007BFAC8 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3E46C5C2233B9F0800987DFB /* LoginViewController.swift */,
+				3E04F75F234202F3007BFAC8 /* UserProfileViewController.swift */,
+				3E04F768234253D4007BFAC8 /* SettingsTableViewController.swift */,
+				3E11C3AD234366A500B9BD0D /* MacrosViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		3E04F76323422B6A007BFAC8 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3E04F76423422BA6007BFAC8 /* HKBiologicalSex.swift */,
+				3E6455202354C407001FDDA0 /* Date+Extension.swift */,
+				3EF98DB5235603280027BED2 /* UIView+Extension.swift */,
+				3E1359F723586450007A5AA7 /* Double+Extension.swift */,
+				3E1359F9235864CF007A5AA7 /* Int+Extension.swift */,
+				3E3FAE76237987A800F10F2D /* UITextField+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		3E1359FC235879DB007A5AA7 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				3E3524E923587C0900CE24F4 /* InsertMeal.storyboard */,
+				3E46C5C4233B9F0800987DFB /* Main.storyboard */,
+				3E46C5C9233B9F0A00987DFB /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		3E46C5B2233B9F0800987DFB = {
+			isa = PBXGroup;
+			children = (
+				3E46C5BD233B9F0800987DFB /* NutriApp */,
+				3E46C5BC233B9F0800987DFB /* Products */,
+				6357FA7A20F966F4DA16F5C6 /* Pods */,
+				27C4B65E2F444DECBDDAA105 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3E46C5BC233B9F0800987DFB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3E46C5BB233B9F0800987DFB /* NutriApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3E46C5BD233B9F0800987DFB /* NutriApp */ = {
+			isa = PBXGroup;
+			children = (
+				3E639683239A6C97006EEC86 /* InsertMeal */,
+				3E46C5D2233BA4E200987DFB /* NutriApp.entitlements */,
+				3E1359FC235879DB007A5AA7 /* Storyboards */,
+				3E03A38223460CC4001FC02D /* Resources */,
+				3E04F76323422B6A007BFAC8 /* Extensions */,
+				3E04F75E2342029F007BFAC8 /* View Controllers */,
+				3E04F75B2341FC33007BFAC8 /* Models */,
+				3E46C5BE233B9F0800987DFB /* AppDelegate.swift */,
+				3E46C5C0233B9F0800987DFB /* SceneDelegate.swift */,
+				3E46C5CC233B9F0A00987DFB /* Info.plist */,
+				3EA9B2E9233E59BD0027B4DB /* HealthKitSetupAssistant.swift */,
+				3E04F76123420415007BFAC8 /* ProfileDataStore.swift */,
+				3E9A84382344B07D00B80842 /* SessionManager.swift */,
+				3E3FAE782379A9BF00F10F2D /* SegueIdentifiers.swift */,
+				3EFA800423D9D94700DCD1CB /* CellIdentifiers.swift */,
+			);
+			path = NutriApp;
+			sourceTree = "<group>";
+		};
+		3E639683239A6C97006EEC86 /* InsertMeal */ = {
+			isa = PBXGroup;
+			children = (
+				3E639684239A6DF0006EEC86 /* CustomUIElements */,
+				3E1607E7234DF0B400B68D9F /* MealTrackerViewController.swift */,
+				3EF98DB32355E1A30027BED2 /* InsertMealViewController.swift */,
+				3EF98DB72356117A0027BED2 /* BarcodeViewController.swift */,
+				3E0147DF23576AA5008E0E3B /* SearchProductViewController.swift */,
+				3EEBFD102358BA82009FB0BD /* TescoProductViewController.swift */,
+				3E5C308A23CE15AD00BA3FFF /* LoadSearchProductViewController.swift */,
+				3E5C308823CDFD9200BA3FFF /* SearchProductResultsTableViewController.swift */,
+				3E65033223D601AF0032A6AB /* EdamamProductViewController.swift */,
+			);
+			path = InsertMeal;
+			sourceTree = "<group>";
+		};
+		3E639684239A6DF0006EEC86 /* CustomUIElements */ = {
+			isa = PBXGroup;
+			children = (
+				3E6EC8F62395286A008EED96 /* MyFoodsTableCell.swift */,
+				3E6EC8F8239548ED008EED96 /* SelfSizedTableView.swift */,
+				3E6B783D23C77AA400E39F7D /* MealHeaderButton.swift */,
+				3E706D2C23D1D0000037D165 /* EdamamProductTableCell.swift */,
+				3EFA7FFA23D99CDE00DCD1CB /* TimelineButton.swift */,
+			);
+			path = CustomUIElements;
+			sourceTree = "<group>";
+		};
+		3EC1877B233CCABA003D33EE /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				3EC1877D233CCAD1003D33EE /* EVALIA.otf */,
+				3EC1877C233CCAD1003D33EE /* EVALIA.ttf */,
+				3EC18780233CCC12003D33EE /* dealerplate.ttf */,
+			);
+			path = fonts;
+			sourceTree = "<group>";
+		};
+		6357FA7A20F966F4DA16F5C6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EE54DA02033CA5063CC43A1C /* Pods-NutriApp.debug.xcconfig */,
+				0E6B6F8BE3C29B27A29312EE /* Pods-NutriApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3E46C5BA233B9F0800987DFB /* NutriApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3E46C5CF233B9F0A00987DFB /* Build configuration list for PBXNativeTarget "NutriApp" */;
+			buildPhases = (
+				F9943F8A3E2A1A6296AE02C0 /* [CP] Check Pods Manifest.lock */,
+				3E46C5B7233B9F0800987DFB /* Sources */,
+				3E46C5B8233B9F0800987DFB /* Frameworks */,
+				3E46C5B9233B9F0800987DFB /* Resources */,
+				08AA81759F2E4CE4BC33C9B1 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NutriApp;
+			productName = NutriApp;
+			productReference = 3E46C5BB233B9F0800987DFB /* NutriApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3E46C5B3233B9F0800987DFB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+				ORGANIZATIONNAME = "Mar Cabrera";
+				TargetAttributes = {
+					3E46C5BA233B9F0800987DFB = {
+						CreatedOnToolsVersion = 11.0;
+					};
+				};
+			};
+			buildConfigurationList = 3E46C5B6233B9F0800987DFB /* Build configuration list for PBXProject "NutriApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3E46C5B2233B9F0800987DFB;
+			productRefGroup = 3E46C5BC233B9F0800987DFB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3E46C5BA233B9F0800987DFB /* NutriApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3E46C5B9233B9F0800987DFB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E3524EA23587C0A00CE24F4 /* InsertMeal.storyboard in Resources */,
+				3EC1877E233CCAD1003D33EE /* EVALIA.ttf in Resources */,
+				3E46C5CB233B9F0A00987DFB /* LaunchScreen.storyboard in Resources */,
+				3E46C5C8233B9F0A00987DFB /* Assets.xcassets in Resources */,
+				3EA9B2E8233E53DD0027B4DB /* bento.png in Resources */,
+				3E46C5C6233B9F0800987DFB /* Main.storyboard in Resources */,
+				3EC1877F233CCAD1003D33EE /* EVALIA.otf in Resources */,
+				3EC18781233CCC12003D33EE /* dealerplate.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		08AA81759F2E4CE4BC33C9B1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NutriApp/Pods-NutriApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NutriApp/Pods-NutriApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NutriApp/Pods-NutriApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F9943F8A3E2A1A6296AE02C0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NutriApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3E46C5B7233B9F0800987DFB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E3FAE792379A9BF00F10F2D /* SegueIdentifiers.swift in Sources */,
+				3E04F769234253D4007BFAC8 /* SettingsTableViewController.swift in Sources */,
+				3E6455212354C407001FDDA0 /* Date+Extension.swift in Sources */,
+				3E46C5C3233B9F0800987DFB /* LoginViewController.swift in Sources */,
+				3E1359FA235864CF007A5AA7 /* Int+Extension.swift in Sources */,
+				3E883302238BED8200A315D4 /* User.swift in Sources */,
+				3E5C308923CDFD9200BA3FFF /* SearchProductResultsTableViewController.swift in Sources */,
+				3E706D2D23D1D0000037D165 /* EdamamProductTableCell.swift in Sources */,
+				3E6EC8F72395286A008EED96 /* MyFoodsTableCell.swift in Sources */,
+				3E706D2923D1B6690037D165 /* EdamamFood.swift in Sources */,
+				3E9A84392344B07D00B80842 /* SessionManager.swift in Sources */,
+				3E04F76223420415007BFAC8 /* ProfileDataStore.swift in Sources */,
+				3EFA800523D9D94700DCD1CB /* CellIdentifiers.swift in Sources */,
+				3E04F76523422BA6007BFAC8 /* HKBiologicalSex.swift in Sources */,
+				3E46C5BF233B9F0800987DFB /* AppDelegate.swift in Sources */,
+				3E5C308D23CE246000BA3FFF /* ProductEdamamResponse.swift in Sources */,
+				3EF98DB6235603280027BED2 /* UIView+Extension.swift in Sources */,
+				3E1359F823586450007A5AA7 /* Double+Extension.swift in Sources */,
+				3E11C3AE234366A500B9BD0D /* MacrosViewController.swift in Sources */,
+				3E04F75A2341F8BD007BFAC8 /* UserHealthProfile.swift in Sources */,
+				3E1607E8234DF0B400B68D9F /* MealTrackerViewController.swift in Sources */,
+				3E0147E023576AA5008E0E3B /* SearchProductViewController.swift in Sources */,
+				3EEBFD112358BA82009FB0BD /* TescoProductViewController.swift in Sources */,
+				3E590A7523DB0F4000E6006C /* FavoriteFood.swift in Sources */,
+				3EF98DB82356117B0027BED2 /* BarcodeViewController.swift in Sources */,
+				3E6B783E23C77AA400E39F7D /* MealHeaderButton.swift in Sources */,
+				3E5C308B23CE15AD00BA3FFF /* LoadSearchProductViewController.swift in Sources */,
+				3E46C5C1233B9F0800987DFB /* SceneDelegate.swift in Sources */,
+				3EF98DB42355E1A30027BED2 /* InsertMealViewController.swift in Sources */,
+				3E566A63238EBC370002CEB6 /* Food.swift in Sources */,
+				3E06D5F62347686100E89A19 /* Macros.swift in Sources */,
+				3E4B1C352359F82000AFA51F /* TescoProductResponse.swift in Sources */,
+				3E3FAE77237987A800F10F2D /* UITextField+Extension.swift in Sources */,
+				3E6EC8F9239548ED008EED96 /* SelfSizedTableView.swift in Sources */,
+				3E04F760234202F3007BFAC8 /* UserProfileViewController.swift in Sources */,
+				3EA9B2EA233E59BD0027B4DB /* HealthKitSetupAssistant.swift in Sources */,
+				3EFA7FFB23D99CDE00DCD1CB /* TimelineButton.swift in Sources */,
+				3E65033323D601AF0032A6AB /* EdamamProductViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3E46C5C4233B9F0800987DFB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3E46C5C5233B9F0800987DFB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3E46C5C9233B9F0A00987DFB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3E46C5CA233B9F0A00987DFB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3E46C5CD233B9F0A00987DFB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3E46C5CE233B9F0A00987DFB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3E46C5D0233B9F0A00987DFB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE54DA02033CA5063CC43A1C /* Pods-NutriApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = NutriApp/NutriApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4QGK58U3J6;
+				INFOPLIST_FILE = NutriApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.marinosoftware.NutriApp1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3E46C5D1233B9F0A00987DFB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E6B6F8BE3C29B27A29312EE /* Pods-NutriApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = NutriApp/NutriApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4QGK58U3J6;
+				INFOPLIST_FILE = NutriApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.marinosoftware.NutriApp1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3E46C5B6233B9F0800987DFB /* Build configuration list for PBXProject "NutriApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E46C5CD233B9F0A00987DFB /* Debug */,
+				3E46C5CE233B9F0A00987DFB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3E46C5CF233B9F0A00987DFB /* Build configuration list for PBXNativeTarget "NutriApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E46C5D0233B9F0A00987DFB /* Debug */,
+				3E46C5D1233B9F0A00987DFB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3E46C5B3233B9F0800987DFB /* Project object */;
+}

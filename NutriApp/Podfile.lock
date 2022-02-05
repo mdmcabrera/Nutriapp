@@ -1,0 +1,75 @@
+PODS:
+  - MaterialComponents/AnimationTiming (89.0.0)
+  - MaterialComponents/Buttons (89.0.0):
+    - MaterialComponents/Elevation
+    - MaterialComponents/Ink
+    - MaterialComponents/private/Math
+    - MaterialComponents/Ripple
+    - MaterialComponents/ShadowElevations
+    - MaterialComponents/ShadowLayer
+    - MaterialComponents/Shapes
+    - MaterialComponents/Typography
+    - MDFInternationalization
+    - MDFTextAccessibility
+  - MaterialComponents/Elevation (89.0.0):
+    - MaterialComponents/private/Color
+    - MaterialComponents/private/Math
+  - MaterialComponents/Ink (89.0.0):
+    - MaterialComponents/private/Color
+    - MaterialComponents/private/Math
+  - MaterialComponents/private/Application (89.0.0)
+  - MaterialComponents/private/Color (89.0.0)
+  - MaterialComponents/private/Math (89.0.0)
+  - MaterialComponents/Ripple (89.0.0):
+    - MaterialComponents/AnimationTiming
+    - MaterialComponents/private/Color
+    - MaterialComponents/private/Math
+  - MaterialComponents/ShadowElevations (89.0.0)
+  - MaterialComponents/ShadowLayer (89.0.0):
+    - MaterialComponents/ShadowElevations
+  - MaterialComponents/Shapes (89.0.0):
+    - MaterialComponents/private/Color
+    - MaterialComponents/private/Math
+    - MaterialComponents/ShadowLayer
+  - MaterialComponents/Typography (89.0.0):
+    - MaterialComponents/private/Application
+    - MaterialComponents/private/Math
+  - MDFInternationalization (2.0.0)
+  - MDFTextAccessibility (2.0.0)
+  - MTBBarcodeScanner (5.0.11)
+  - Realm (4.1.1):
+    - Realm/Headers (= 4.1.1)
+  - Realm/Headers (4.1.1)
+  - RealmSwift (4.1.1):
+    - Realm (= 4.1.1)
+  - SwiftKeychainWrapper (3.4.0)
+
+DEPENDENCIES:
+  - MaterialComponents/Buttons
+  - MTBBarcodeScanner
+  - RealmSwift
+  - SwiftKeychainWrapper
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - MaterialComponents
+    - MDFInternationalization
+    - MDFTextAccessibility
+  trunk:
+    - MTBBarcodeScanner
+    - Realm
+    - RealmSwift
+    - SwiftKeychainWrapper
+
+SPEC CHECKSUMS:
+  MaterialComponents: 82a817165f3ca2df0e3f321a9d05d08bb152c7f8
+  MDFInternationalization: 010097556d6b09d2c4ea38e0820ea6d37be6a314
+  MDFTextAccessibility: 85c09a1bd9c321f494348e632a25063bcda35a53
+  MTBBarcodeScanner: f453b33c4b7dfe545d8c6484ed744d55671788cb
+  Realm: 25f0a8244cbb1c2271c922963ea8666fc2d8104d
+  RealmSwift: 9e2657b33764f80e4a4dffd6d440e24715782052
+  SwiftKeychainWrapper: 6fc49fbf7d4a6b0772917acb0e53a1639f6078d6
+
+PODFILE CHECKSUM: eaafd78fdc286c83662c259283f0f11c82754510
+
+COCOAPODS: 1.8.3
