@@ -11,33 +11,32 @@ import AuthenticationServices
 import MaterialComponents.MaterialButtons
 
 class LoginViewController: UIViewController {
-
+    //MARK: - IBOutlets
     @IBOutlet weak var mainScreenButton: UIButton!
-    var userCredential = ""
-
-    @IBAction func mainViewButtonPressed(_ sender: Any) {
-        self.performSegue(withIdentifier: "mainViewSegue", sender: self)
-    }
+    
+    //MARK: - Properties
+    var userCredentials = ""
+    
+    //MARK: - View Lifecycle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupAppleSignIn()
+        setupAppleSignInButton()
         view.setGradientBackground(colorOne: UIColor(red:0.74, green:0.76, blue:0.78, alpha:1.0), colorTwo: UIColor(red:0.17, green:0.24, blue:0.31, alpha:1.0))
     }
 
     override func viewDidAppear(_ animated: Bool) {
 
-    if SessionManager.isUserLoggedIn() == true {
-        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        let newViewController = storyBoard.instantiateViewController(withIdentifier: "SettingsTableViewController") as! SettingsTableViewController
-                self.present(newViewController, animated: true, completion: nil)
+        if SessionManager.isUserLoggedIn() == true {
+            let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            let newViewController = storyBoard.instantiateViewController(withIdentifier: "SettingsTableViewController") as! SettingsTableViewController
+            self.present(newViewController, animated: true, completion: nil)
         }
     }
 
-
-    func setupAppleSignIn() {
+    func setupAppleSignInButton() {
         let button = ASAuthorizationAppleIDButton(type: .signIn, style: .black)
         button.translatesAutoresizingMaskIntoConstraints = false
-//        button.frame = CGRect(x: 0, y: 0, width: 200, height: 40)
         button.addTarget(self, action: #selector(appleIDButtonTapped), for: .touchUpInside)
         self.view.addSubview(button)
 
@@ -45,8 +44,7 @@ class LoginViewController: UIViewController {
         button.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: 40).isActive = true
         button.widthAnchor.constraint(equalToConstant: 200).isActive = true
         button.heightAnchor.constraint(equalToConstant: 40).isActive = true
-//        button.center = self.view.center
-        button.cornerRadius = 100
+        button.cornerRadius = 8
     }
 
     @objc func appleIDButtonTapped() {
@@ -56,29 +54,25 @@ class LoginViewController: UIViewController {
         let controller = ASAuthorizationController(authorizationRequests: [request])
         controller.delegate = self
         controller.presentationContextProvider = self
-
         controller.performRequests()
+    }
+
+    @IBAction func mainViewButtonPressed(_ sender: Any) {
+        self.performSegue(withIdentifier: "mainViewSegue", sender: self)
     }
 }
 
+//MARK: - Apple Sign In Delegate
 extension LoginViewController: ASAuthorizationControllerDelegate {
-
-    //
+    
     func authorizationController(controller: ASAuthorizationController, didCompleteWithAuthorization authorization: ASAuthorization){
         if let credential = authorization.credential as? ASAuthorizationAppleIDCredential {
-            // Creates an account in the system
-         //   let userIdentifier = credential.user
-          //  let userFirstName = credential.fullName?.givenName
-          //  let userLastname = credential.fullName?.familyName
-          //  let userEmail = credential.email
-          //  print(userIdentifier + " " + userFirstName! + " " + userLastname! + " " + userEmail!)
 
             let dataToken = credential.identityToken!
             let stringToken = String(data: dataToken, encoding: String.Encoding.utf8)!
 
             SessionManager.setCurrentLoginID(stringToken)
 
-//            userCredential = (credential.fullName?.givenName)!
             performSegue(withIdentifier: SegueIdentifiers.signInWithApple, sender: self)
         }
     }
